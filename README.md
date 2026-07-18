@@ -128,17 +128,28 @@ loop:
 
 ## 📈 Plots Generated
 
-Each run produces **8 popup windows**:
+Each run produces several popup windows. Examples below from a run with `λ=10, seed=42`:
 
-| # | Plot | What it shows |
-|---|---|---|
-| 1 | Convergence curves | Cost dropping over iterations for both algorithms |
-| 2-3 | Solution maps (side by side) | Where hospitals are placed — HC vs SA comparison |
-| 4 | λ vs hospitals + travel | The core tradeoff visualized |
-| 5 | Cost vs λ | How total cost rises as λ increases |
-| 6 | Stability boxplot | Variance across 10 runs |
-| 7 | HC tuning | Cost vs max_iterations |
-| 8 | SA tuning | Cost vs cooling rate α |
+**Hospital placement — Hill Climbing vs Simulated Annealing**
+
+![Solution maps comparing hospital placement between Hill Climbing and Simulated Annealing](images/solutions_comparison.png)
+
+**Convergence curves**
+
+![Cost dropping over iterations for both algorithms](images/convergence.png)
+
+**λ vs hospital count and travel distance**
+
+![Effect of lambda on number of hospitals and average travel distance](images/lambda_effect.png)
+
+**Parameter tuning**
+
+<table>
+<tr>
+<td><img src="images/hc_tuning.png" alt="Hill Climbing cost vs max_iterations" /></td>
+<td><img src="images/sa_tuning.png" alt="Simulated Annealing cost vs cooling rate alpha" /></td>
+</tr>
+</table>
 
 ---
 

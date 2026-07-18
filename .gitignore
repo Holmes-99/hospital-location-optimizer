@@ -27,6 +27,7 @@ Thumbs.db
 # Results (generated at runtime — not needed in repo)
 results/
 *.png
+!images/*.png
 
 # Jupyter
 .ipynb_checkpoints/
